@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gen4Regen – Addressing Training Data Scarcity using Image Generators</title>
+
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="static/css/index.css" />
+</head>
+
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+      <span>Gen4Regen</span>
+    </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="mainNavbar" class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="#abstract">Abstract</a>
+      <a class="navbar-item" href="#teaser">Teaser</a>
+      <a class="navbar-item" href="#bibtex">BibTeX</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO / TITLE ===================== -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+
+      <h1 class="publication-title">
+        Addressing Training Data Scarcity using Image Generators:
+      </h1>
+      <h2 class="publication-subtitle">
+        The Gen4Regen Dataset for Forest Regeneration Mapping
+      </h2>
+
+      <!-- Authors -->
+      <div class="publication-authors" style="margin-top: 1.5rem;">
+        <span class="author-block">Gabriel Jeanson<sup>1,2,*</sup>,</span>
+        <span class="author-block">David-Alexandre Duclos<sup>1,2</sup>,</span>
+        <span class="author-block">William Larrivée-Hardy<sup>1,2</sup>,</span>
+        <span class="author-block">Noé Cochet<sup>1,2</sup>,</span>
+        <span class="author-block">Matěj Boxan<sup>1,2</sup>,</span>
+        <span class="author-block">Anthony Deschênes<sup>2</sup>,</span>
+        <span class="author-block">François Pomerleau<sup>1,2</sup>,</span>
+        <span class="author-block">Philippe Giguère<sup>1,2,*</sup></span>
+      </div>
+
+      <!-- Affiliations -->
+      <div class="publication-affiliations" style="margin-top: 0.8rem;">
+        <span class="affiliation-block"><sup>1,2</sup> Northern Robotics Laboratory, Université Laval, Québec, QC, G1V&nbsp;0A6, Canada</span>
+      </div>
+      <div style="margin-top: 0.4rem;">
+        <span class="affiliation-block">
+          <i class="fas fa-envelope" style="color:#2d6a2d; margin-right:4px;"></i>
+          <a href="mailto:gabriel.jeanson@norlab.ulaval.ca">gabriel.jeanson@norlab.ulaval.ca</a>
+        </span>
+      </div>
+
+      <!-- Links -->
+      <div class="publication-links">
+        <!-- Paper (coming soon) -->
+        <a class="button is-dark is-rounded" title="Paper coming soon" aria-disabled="true"
+           style="cursor: default; opacity: 0.65; pointer-events: none;">
+          <span class="icon"><i class="fas fa-file-pdf"></i></span>
+          <span>Paper (coming soon)</span>
+        </a>
+
+        <!-- Dataset (coming soon) -->
+        <a class="button is-dark is-rounded" title="Dataset coming soon" aria-disabled="true"
+           style="cursor: default; opacity: 0.65; pointer-events: none;">
+          <span class="icon"><i class="fas fa-database"></i></span>
+          <span>Dataset (coming soon)</span>
+        </a>
+
+        <!-- GitHub -->
+        <a class="button is-dark is-rounded" href="https://github.com/norlab-ulaval/gen4regen" target="_blank" rel="noopener">
+          <span class="icon"><i class="fab fa-github"></i></span>
+          <span>GitHub</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TEASER IMAGE ===================== -->
+<section id="teaser" class="section">
+  <div class="container is-max-desktop">
+    <figure>
+      <object type="image/svg+xml" data="static/images/placeholder.svg"
+              style="width:100%; border-radius:10px; box-shadow:0 6px 24px rgba(0,0,0,0.12);">
+        <!-- Fallback for browsers without SVG support -->
+        <img src="static/images/placeholder.svg" alt="Gen4Regen teaser image placeholder" />
+      </object>
+      <figcaption>
+        <strong>Teaser image placeholder.</strong>
+        Replace <code>static/images/placeholder.svg</code> with your actual figure illustrating
+        the Gen4Regen pipeline (e.g., raw image → generator → synthetic image + pixel-aligned mask → segmentation model).
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ===================== ABSTRACT ===================== -->
+<section id="abstract" class="section" style="background:#f9fbf9;">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="section-title">Abstract</h2>
+    <div class="abstract-content">
+      <p>
+        This research framework addresses the bottleneck of expert-annotated data in forestry
+        by leveraging generative AI to boost semantic segmentation performance. By integrating
+        synthetic imagery and pixel-aligned masks generated by the Gemini Nano Banana Pro model,
+        the methodology significantly improves the identification of rare tree species in complex
+        regeneration zones.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BIBTEX ===================== -->
+<section id="bibtex" class="section">
+  <div class="container is-max-desktop">
+    <h2 class="section-title">BibTeX</h2>
+    <p style="margin-bottom:1rem; color:#666;">
+      Citation information will be added upon publication.
+    </p>
+    <pre><code>@article{gen4regen2025,
+  author    = {Jeanson, Gabriel and Duclos, David-Alexandre and Larri\`{e}e-Hardy, William and
+               Cochet, No\'{e} and Boxan, Mat\v{e}j and Desch\^{e}nes, Anthony and
+               Pomerleau, Fran\c{c}ois and Gigu\`{e}re, Philippe},
+  title     = {Addressing Training Data Scarcity using Image Generators:
+               The Gen4Regen Dataset for Forest Regeneration Mapping},
+  journal   = {TBD},
+  year      = {2025},
+}</code></pre>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      Northern Robotics Laboratory (NorLab) &mdash;
+      Université Laval, Québec, QC, Canada.
+    </p>
+    <p>
+      Website template inspired by
+      <a href="https://nerfies.github.io/" target="_blank" rel="noopener">Nerfies</a>.
+      Source code available on
+      <a href="https://github.com/norlab-ulaval/gen4regen" target="_blank" rel="noopener">GitHub</a>.
+    </p>
+  </div>
+</footer>
+
+<!-- ===================== JS ===================== -->
+<script>
+  // Navbar burger toggle
+  document.addEventListener('DOMContentLoaded', function () {
+    const burger = document.querySelector('.navbar-burger');
+    const menu = document.getElementById('mainNavbar');
+    if (burger && menu) {
+      burger.addEventListener('click', function () {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
