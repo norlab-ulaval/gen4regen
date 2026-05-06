@@ -77,7 +77,7 @@
                             >François Pomerleau<sup>1,2</sup>,</span
                         >
                         <span class="author-block"
-                            >Philippe Giguère<sup>1,2,*</sup></span
+                            >Philippe Giguère<sup>1,2</sup></span
                         >
                     </div>
 
@@ -181,26 +181,27 @@
                     >
                         <!-- Fallback for browsers without SVG support -->
                         <img
-                            src="static/images/placeholder.svg"
+                            src="static/images/overview.jpg"
                             alt="Gen4Regen teaser image"
                         />
                     </object>
                     <figcaption>
                         <strong
-                            >Our model training pipeline, combining 199
-                            manually-labelled, 25 106 pseudo-labelled real
+                            >Overview of our model training pipeline, combining
+                            199 manually-labelled, 25 106 pseudo-labelled real
                             images, and 2101 synthetic labelled images.</strong
                         >
-                        The pseudo-labelled real images correspond to over 550
-                        000 image crops of 1 MP. The top left (purple outline)
-                        represents our primary contribution, the Gen4Regen
-                        dataset, which serves to demonstrate that an image
-                        generator can now produce viable training data for
-                        semantic segmentation. For this, we leverage the Nano
-                        Banana Pro model to produce 2101 synthetic, drone-view
-                        images and masks of boreal forest regeneration. This
-                        component is key in addressing the scarcity of labelled
-                        data and class imbalance.
+                        The pseudo-labelled real images are equivalent to over
+                        550 000 image crops of 1 MP. The top left (purple
+                        outline) represents our primary contribution, the
+                        Gen4Regen dataset, which serves to demonstrate that a
+                        generalist vision generator can now produce
+                        photorealistic images and corresponding annotations as
+                        viable training data for semantic segmentation. For
+                        this, we leverage the Nano Banana Pro model to produce
+                        2101 synthetic, drone-view images and masks of boreal
+                        forest regeneration. This component is key in addressing
+                        the scarcity of labelled data and class imbalance.
                     </figcaption>
                 </figure>
             </div>
@@ -229,28 +230,28 @@
                         integrates real- world data with synthetic generation,
                         introducing WilDReF-Q-V2, an expansion of a natural
                         forest dataset featuring 13 977 new unlabelled and 50
-                        labelled images. Crucially, we leverage the Gemini Nano
-                        Banana Pro model to simultaneously synthesize 2101
-                        high-fidelity images and their corresponding
-                        pixel-aligned semantic masks, forming the Gen4Regen
-                        dataset. We evaluate the orthogonality of manual labels,
-                        automated pseudo- labels, and AI-generated data using
-                        Mask2Former and DINOv2 architectures. Our results
-                        demonstrate that AI-generated synthetic data is highly
-                        complementary to real-world pseudo-labels, with a
-                        unified training yielding an F1 score improvement of
-                        over 15 % compared to purely supervised baselines.
-                        Ablation studies indicate that even small quantities of
-                        prompt-generated data significantly enhance the
-                        representation of rare species, such as Yellow Birch and
-                        Paper Birch, which saw per-species gains of up to 30 %.
-                        We conclude that generalist vision-language models can
-                        serve as agile data factories, effectively bootstrapping
-                        perception tasks for ”orphaned” AI domains where expert
+                        labelled images. Crucially, we leverage the
+                        vision-language Nano Banana Pro model to simultaneously
+                        generate 2101 high-fidelity images and their
+                        corresponding pixel-aligned semantic masks from prompts,
+                        forming the Gen4Regen dataset. We evaluate the
+                        orthogonality of manual labels, automated pseudo-labels,
+                        and AI-generated data using Mask2Former and DINOv2
+                        architectures. Our results demonstrate that AI-generated
+                        data is highly complementary to real-world
+                        pseudo-labels, with a unified training yielding an F1
+                        score improvement of over 15 % compared to purely
+                        supervised baselines. Ablation studies indicate that
+                        even small quantities of prompt-generated data
+                        significantly enhance the representation of rare
+                        species, some of which saw per-species gains of up to 30
+                        %. We conclude that vision-language models can serve as
+                        agile data generators, effectively bootstrapping
+                        perception tasks for niche AI domains where expert
                         labels are scarce or unavailable. This paradigm enables
                         practitioners to bypass seasonal data collection
                         constraints and develop robust, specialized ecological
-                        monitoring systems with minimal manual effort.
+                        monitoring systems with minimal manual effort
                     </p>
                 </div>
             </div>
