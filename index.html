@@ -48,8 +48,8 @@
             <div class="hero-body">
                 <div class="container is-max-widescreen has-text-centered">
                     <h1 class="publication-title">
-                        Addressing Training Data Scarcity using Image
-                        Generators:<br />
+                        Leveraging Image Generators to Address Training Data
+                        Scarcity:<br />
                         The Gen4Regen Dataset for Forest Regeneration Mapping
                     </h1>
 
@@ -115,21 +115,18 @@
 
                     <!-- Links -->
                     <div class="publication-links">
-                        <!-- Paper (coming soon) -->
+                        <!-- Paper -->
                         <a
                             class="button is-dark is-rounded"
-                            title="Paper coming soon"
-                            aria-disabled="true"
-                            style="
-                                cursor: default;
-                                opacity: 0.65;
-                                pointer-events: none;
-                            "
+                            href="https://arxiv.org/pdf/2605.05627"
+                            title="Paper preprint"
+                            target="_blank"
+                            rel="noopener"
                         >
                             <span class="icon"
                                 ><i class="fas fa-file-pdf"></i
                             ></span>
-                            <span>Paper (coming soon)</span>
+                            <span>Paper preprint</span>
                         </a>
 
                         <!-- Dataset (coming soon) -->
@@ -183,14 +180,14 @@
                         The pseudo-labelled real images are equivalent to over
                         550 000 image crops of 1 MP. The top left (purple
                         outline) represents our primary contribution, the
-                        Gen4Regen dataset, which serves to demonstrate that a
-                        generalist vision generator can now produce
-                        photorealistic images and corresponding annotations as
-                        viable training data for semantic segmentation. For
-                        this, we leverage the Nano Banana Pro model to produce
-                        2101 synthetic, drone-view images and masks of boreal
-                        forest regeneration. This component is key in addressing
-                        the scarcity of labelled data and class imbalance.
+                        Gen4Regen dataset, which serves to demonstrate that
+                        image generators can now produce photorealistic images
+                        and corresponding annotations as viable training data
+                        for semantic segmentation. For this, we leverage the
+                        Nano Banana Pro model to produce 2101 synthetic,
+                        drone-view images and masks of boreal forest
+                        regeneration. This component is key in addressing the
+                        scarcity of labelled data and class imbalance.
                     </figcaption>
                 </figure>
             </div>
@@ -215,32 +212,27 @@
                         fine-grained forest regeneration species by providing a
                         scalable framework that reduces reliance on manual
                         photo-interpretation for high-resolution,
-                        millimetre-level overhead imagery. Our methodology
-                        integrates real- world data with synthetic generation,
-                        introducing WilDReF-Q-V2, an expansion of a natural
-                        forest dataset featuring 13 977 new unlabelled and 50
-                        labelled images. Crucially, we leverage the
-                        vision-language Nano Banana Pro model to simultaneously
-                        generate 2101 high-fidelity images and their
-                        corresponding pixel-aligned semantic masks from prompts,
-                        forming the Gen4Regen dataset. We evaluate the
-                        orthogonality of manual labels, automated pseudo-labels,
-                        and AI-generated data using Mask2Former and DINOv2
-                        architectures. Our results demonstrate that AI-generated
-                        data is highly complementary to real-world
-                        pseudo-labels, with a unified training yielding an F1
-                        score improvement of over 15 % compared to purely
-                        supervised baselines. Ablation studies indicate that
-                        even small quantities of prompt-generated data
-                        significantly enhance the representation of rare
-                        species, some of which saw per-species gains of up to 30
-                        %. We conclude that vision-language models can serve as
+                        millimetre-level aerial imagery. Importantly, we
+                        leverage the large-scale vision-language Nano Banana Pro
+                        model to simultaneously generate high-fidelity images
+                        and their corresponding pixel-aligned semantic masks
+                        from prompts. We introduce WilDReF-Q-V2, an expansion of
+                        a natural forest dataset with 13 977 new unlabelled and
+                        50 labelled real images, as well as the Gen4Regen
+                        dataset, featuring 2101 pairs of synthetic images and
+                        semantic masks. Our methodology integrates real-world
+                        data with AI-generated images, highlighting that
+                        AI-generated data is highly complementary to real-world
+                        data, with unified training yielding an F1 score
+                        improvement of over 15 %pt compared to purely supervised
+                        baselines. Furthermore, we demonstrate that even small
+                        quantities of prompt-generated data significantly
+                        improve performance for underrepresented species, some
+                        of which saw per-species F1 score gains of up to 30 %pt.
+                        We conclude that vision-language models can serve as
                         agile data generators, effectively bootstrapping
                         perception tasks for niche AI domains where expert
-                        labels are scarce or unavailable. This paradigm enables
-                        practitioners to bypass seasonal data collection
-                        constraints and develop robust, specialized ecological
-                        monitoring systems with minimal manual effort.
+                        labels are scarce or unavailable.
                     </p>
                 </div>
             </div>
@@ -250,17 +242,14 @@
         <section id="bibtex" class="section">
             <div class="container is-max-desktop">
                 <h2 class="section-title">BibTeX</h2>
-                <p style="margin-bottom: 1rem; color: #666">
-                    Citation information will be added upon publication.
-                </p>
-                <pre><code>@article{gen4regen2026,
-  author    = {Jeanson, Gabriel and Duclos, David-Alexandre and Larri\`{e}e-Hardy, William and
-               Cochet, No\'{e} and Boxan, Mat\v{e}j and Desch\^{e}nes, Anthony and
-               Pomerleau, Fran\c{c}ois and Gigu\`{e}re, Philippe},
-  title     = {Addressing Training Data Scarcity using Image Generators:
-               The Gen4Regen Dataset for Forest Regeneration Mapping},
-  journal   = {TBD},
-  year      = {2026},
+                <pre><code>@misc{jeanson2026_gen4regen,
+    title = {Leveraging Image Generators to Address Training Data Scarcity: The Gen4Regen Dataset for Forest Regeneration Mapping},
+    author = {Jeanson, Gabriel and Duclos, David-Alexandre and Larri\`{e}e-Hardy, William and Cochet, No\'{e} and Boxan, Mat\v{e}j and Desch\^{e}nes, Anthony and Pomerleau, Fran\c{c}ois and Gigu\`{e}re, Philippe},
+    year={2026},
+    eprint={2605.05627},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    url={https://arxiv.org/abs/2605.05627},
 }</code></pre>
             </div>
         </section>
