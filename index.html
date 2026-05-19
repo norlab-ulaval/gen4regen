@@ -221,7 +221,11 @@
                         50 labelled real images, as well as the Gen4Regen
                         dataset, featuring 2101 pairs of synthetic images and
                         semantic masks. Our methodology integrates real-world
-                        data with AI-generated images, highlighting that
+                        data with AI-generated images, addressing both data
+                        scarcity and class imbalance in forest regeneration
+                        mapping. We evaluate the orthogonality of manual labels,
+                        automated pseudo-labels, and synthetic data using
+                        Mask2Former and DINOv2 architectures, highlighting that
                         AI-generated data is highly complementary to real-world
                         data, with unified training yielding an F1 score
                         improvement of over 15 %pt compared to purely supervised
@@ -232,7 +236,10 @@
                         We conclude that vision-language models can serve as
                         agile data generators, effectively bootstrapping
                         perception tasks for niche AI domains where expert
-                        labels are scarce or unavailable.
+                        labels are scarce or unavailable. This paradigm enables
+                        practitioners to bypass seasonal data collection
+                        constraints and develop specialized ecological
+                        monitoring systems with minimal manual effort.
                     </p>
                 </div>
             </div>
