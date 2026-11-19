@@ -1,6 +1,6 @@
 <div align="center">
 
-<h1>Leveraging Image Generators to Address Training Data Scarcity:<br>The Gen4Regen Dataset for Forest Regeneration Mapping</h1>
+<h1>Leveraging Image Generators to Address Data Scarcity:<br>The Gen4Regen Dataset for Forest Regeneration Mapping</h1>
 
 **Gabriel&nbsp;Jeanson**<sup>1,2</sup>,
 **David-Alexandre&nbsp;Duclos**<sup>1,2</sup>,
@@ -23,7 +23,7 @@
 </div>
 
 > [!NOTE]
-> **Code and UAV images dataset will be available soon.**
+> **Code and UAV image dataset will be available soon.**
 
 ## About
 
