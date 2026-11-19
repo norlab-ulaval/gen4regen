@@ -1,19 +1,52 @@
-# Gen4Regen
+<div align="center">
 
-**Leveraging Image Generators to Address Training Data Scarcity:
-The Gen4Regen Dataset for Forest Regeneration Mapping**
+<h1>Leveraging Image Generators to Address Training Data Scarcity:<br>The Gen4Regen Dataset for Forest Regeneration Mapping</h1>
 
-Sustainable forest management relies on precise species composition mapping, yet traditional ground surveys are labour-intensive and geographically constrained. While Uncrewed Aerial Vehicles (UAVs) offer scalable data collection, the transition to deep learning-based interpretation is bottlenecked by the severe scarcity of expert-annotated imagery, particularly in complex, visually heterogeneous regeneration zones. This paper addresses the dual challenges of data scarcity and extreme class imbalance in the semantic segmentation of fine-grained forest regeneration species by providing a scalable framework that reduces reliance on manual photo-interpretation for high-resolution, millimetre-level aerial imagery. Importantly, we leverage the large-scale vision-language Nano Banana Pro model to simultaneously generate high-fidelity images and their corresponding pixel-aligned semantic masks from prompts. We introduce WilDReF-Q-V2, an expansion of a natural forest dataset with 13 977 new unlabelled and 50 labelled real images, as well as the Gen4Regen dataset, featuring 2101 pairs of synthetic images and semantic masks. Our methodology integrates real-world data with AI-generated images, addressing both data scarcity and class imbalance in forest regeneration mapping. We evaluate the orthogonality of manual labels, automated pseudo-labels, and synthetic data using Mask2Former and DINOv2 architectures, highlighting that AI-generated data is highly complementary to real-world pseudo-labels, with unified training yielding an F1 score improvement of over 15 %pt compared to purely supervised baselines. Furthermore, we demonstrate that even small quantities of prompt-generated data significantly improve performance for underrepresented species, some of which saw per-species F1 score gains of up to 30 %pt. We conclude that vision-language models can serve as agile data generators, effectively bootstrapping perception tasks for niche AI domains where expert labels are scarce or unavailable. This paradigm enables practitioners to bypass seasonal data collection constraints and develop specialized ecological monitoring systems with minimal manual effort.
+**Gabriel&nbsp;Jeanson**<sup>1,2</sup>,
+**David-Alexandre&nbsp;Duclos**<sup>1,2</sup>,
+**William&nbsp;Larrivée-Hardy**<sup>1,2</sup>,
+**Noé&nbsp;Cochet**<sup>1,2</sup>,
+**Matěj&nbsp;Boxan**<sup>1,2</sup>,
+**Anthony&nbsp;Deschênes**<sup>2</sup>,
+**François&nbsp;Pomerleau**<sup>1,2</sup>,
+**Philippe&nbsp;Giguère**<sup>1,2</sup>
 
-## Website
+<sup>1</sup>Northern&nbsp;Robotics&nbsp;Laboratory&nbsp;(Norlab), Université&nbsp;Laval<br>
+<sup>2</sup>Département&nbsp;d'informatique&nbsp;et&nbsp;de&nbsp;génie&nbsp;logiciel, Université&nbsp;Laval
 
-The project website lives at [`index.html`](index.html) and is hosted via GitHub Pages.
+<a href="https://arxiv.org/abs/2605.05627"><img src="https://img.shields.io/badge/arXiv-2605.05627-b31b1b" alt="arXiv"></a>
+<a href="https://norlab-ulaval.github.io/gen4regen/"><img src="https://img.shields.io/badge/Project_Page-Gen4Regen-green" alt="Project Page"></a>
+<img src="https://img.shields.io/badge/Dataset-coming_soon-lightgrey" alt="Dataset (coming soon)">
 
-To view it locally, open `index.html` in any modern browser or serve the root directory:
+<img src="assets/overview.jpg" alt="Gen4Regen overview" width="800">
 
-```bash
-python3 -m http.server 8080
-# then open http://localhost:8080
+</div>
+
+> [!NOTE]
+> **Code and UAV images dataset will be available soon.**
+
+## About
+
+Mapping fine-grained species in forest regeneration zones from UAV imagery is held back by the scarcity of expert-annotated data and by extreme class imbalance. We use the image generator Nano Banana Pro to generate high-fidelity images **together with pixel-aligned semantic masks** directly from prompts, and create the **Gen4regen dataset**. We evaluate the impact of different data sources for semantic segmentation, and release:
+
+- **WilDReF-Q-V2**: an extension of a natural forest dataset with 13 977 new unlabelled and 50 labelled real images.
+
+Combining synthetic data with real-world pseudo-labels improves F1 score by over 13 %pt compared to purely supervised baselines, using Mask2Former, DINOv2, and DINOv3 models, with per-species gains of up to 30 %pt for underrepresented species.
+
+## Citation
+
+If you find this work useful, please cite:
+
+```bibtex
+@misc{jeanson2026_gen4regen,
+    title = {Leveraging Image Generators to Address Training Data Scarcity: The Gen4Regen Dataset for Forest Regeneration Mapping},
+    author = {Jeanson, Gabriel and Duclos, David-Alexandre and Larriv\'{e}e-Hardy, William and Cochet, No\'{e} and Boxan, Mat\v{e}j and Desch\^{e}nes, Anthony and Pomerleau, Fran\c{c}ois and Gigu\`{e}re, Philippe},
+    year={2026},
+    eprint={2605.05627},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    url={https://arxiv.org/abs/2605.05627},
+}
 ```
 
 ## Contact
