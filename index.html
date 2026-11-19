@@ -48,7 +48,7 @@
             <div class="hero-body">
                 <div class="container is-max-widescreen has-text-centered">
                     <h1 class="publication-title">
-                        Leveraging Image Generators to Address Training Data
+                        Leveraging Image Generators to Address Data
                         Scarcity:<br />
                         The Gen4Regen Dataset for Forest Regeneration Mapping
                     </h1>
@@ -208,38 +208,43 @@
                         expert-annotated imagery, particularly in complex,
                         visually heterogeneous regeneration zones. This paper
                         addresses the dual challenges of data scarcity and
-                        extreme class imbalance in the semantic segmentation of
-                        fine-grained forest regeneration species by providing a
-                        scalable framework that reduces reliance on manual
-                        photo-interpretation for high-resolution,
-                        millimetre-level aerial imagery. Importantly, we
-                        leverage the large-scale vision-language Nano Banana Pro
-                        model to simultaneously generate high-fidelity images
-                        and their corresponding pixel-aligned semantic masks
-                        from prompts. We introduce WilDReF-Q-V2, an expansion of
-                        a natural forest dataset with 13 977 new unlabelled and
-                        50 labelled real images, as well as the Gen4Regen
-                        dataset, featuring 2101 pairs of synthetic images and
+                        extreme class imbalance in the fine-grained semantic
+                        segmentation of plants by providing a scalable framework
+                        that reduces reliance on manual photo-interpretation for
+                        fine spatial resolution, millimetre-level aerial
+                        imagery. Importantly, we leverage the large-scale Nano
+                        Banana Pro model to simultaneously generate
+                        high-fidelity images and their corresponding
+                        pixel-aligned semantic masks from prompts. We introduce
+                        WilDReF-Q-V2, an expansion of a natural forest dataset
+                        with 13 977 new unlabelled and 50 hand-labelled
+                        <em>real</em> images, as well as the Gen4Regen dataset,
+                        featuring 2101 pairs of <em>synthetic</em> images and
                         semantic masks. Our methodology integrates real-world
                         data with AI-generated images, addressing both data
                         scarcity and class imbalance in forest regeneration
                         mapping. We evaluate the orthogonality of manual labels,
-                        automated pseudo-labels, and synthetic data using
-                        Mask2Former and DINOv2 architectures, highlighting that
-                        AI-generated data is highly complementary to real-world
-                        data, with unified training yielding an F1 score
-                        improvement of over 15 %pt compared to purely supervised
-                        baselines. Furthermore, we demonstrate that even small
-                        quantities of prompt-generated data significantly
-                        improve performance for underrepresented species, some
-                        of which saw per-species F1 score gains of up to 30 %pt.
-                        We conclude that vision-language models can serve as
-                        agile data generators, effectively bootstrapping
-                        perception tasks for niche AI domains where expert
-                        labels are scarce or unavailable. This paradigm enables
-                        practitioners to bypass seasonal data collection
-                        constraints and develop specialized ecological
-                        monitoring systems with minimal manual effort.
+                        automated pseudo-labels, and synthetic data using the
+                        Mask2Former, DINOv2, and DINOv3 architectures under
+                        spatially distant cross-validation folds, and highlight
+                        that AI-generated data is highly complementary to
+                        real-world pseudo-labels, with unified training yielding
+                        an F1 score improvement of over 13 %pt compared to
+                        purely supervised baselines. Furthermore, we demonstrate
+                        that even small quantities of prompt-generated data
+                        significantly improve performance for underrepresented
+                        classes, some of which see per-class F1 score gains of
+                        over 30 %pt. We conclude that large-scale vision models
+                        show strong potential as agile data generators to
+                        effectively bootstrap perception tasks for niche AI
+                        domains where expert labels are scarce or unavailable.
+                        This work demonstrates a viable path toward bypassing
+                        seasonal data collection constraints, suggesting that as
+                        generative models continue to mature, practitioners may
+                        develop specialized ecological monitoring systems with
+                        limited manual effort. Our UAV image datasets, source
+                        code, and models will be available at <a
+                        href="https://norlab-ulaval.github.io/gen4regen">https://norlab-ulaval.github.io/gen4regen</a>.
                     </p>
                 </div>
             </div>
@@ -251,7 +256,7 @@
                 <h2 class="section-title">BibTeX</h2>
                 <pre><code>@misc{jeanson2026_gen4regen,
     title = {Leveraging Image Generators to Address Training Data Scarcity: The Gen4Regen Dataset for Forest Regeneration Mapping},
-    author = {Jeanson, Gabriel and Duclos, David-Alexandre and Larri\`{e}e-Hardy, William and Cochet, No\'{e} and Boxan, Mat\v{e}j and Desch\^{e}nes, Anthony and Pomerleau, Fran\c{c}ois and Gigu\`{e}re, Philippe},
+    author = {Jeanson, Gabriel and Duclos, David-Alexandre and Larriv\'{e}e-Hardy, William and Cochet, No\'{e} and Boxan, Mat\v{e}j and Desch\^{e}nes, Anthony and Pomerleau, Fran\c{c}ois and Gigu\`{e}re, Philippe},
     year={2026},
     eprint={2605.05627},
     archivePrefix={arXiv},
